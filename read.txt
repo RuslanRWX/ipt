@@ -1,0 +1,5 @@
+
+cat /etc/rsyslog.d/iptables.conf 
+:msg, startswith, "iptables: " -/var/log/iptables.log
+& ~
+
